@@ -1,4 +1,4 @@
-package cl.duoc.ms_customer_bff;
+package cl.duoc.ms_sales_bff;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
