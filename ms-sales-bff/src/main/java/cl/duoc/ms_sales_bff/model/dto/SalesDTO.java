@@ -15,9 +15,13 @@ import lombok.ToString;
 @Setter
 @ToString
 public class SalesDTO {
-    private String           sessionId;
-    private LocalDateTime    date;
-    private Integer          amount;
-    private List<ProductDTO> products;
+    //private String           sessionId;
+    //private LocalDateTime    date;
+    //private Integer          amount;
+    //private List<ProductDTO> products;
+
+    private Long customerId;
+    private LocalDateTime orderDate;
+    private double totalAmount;
 
 }
