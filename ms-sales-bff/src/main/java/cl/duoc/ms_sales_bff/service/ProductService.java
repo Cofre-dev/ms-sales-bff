@@ -4,17 +4,17 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cl.duoc.ms_sales_bff.clients.SalesDbFeignClient;
+import cl.duoc.ms_sales_bff.clients.SalesBsFeignClient;
 import cl.duoc.ms_sales_bff.model.dto.SalesDTO;
 
 @Service
 public class ProductService {
 
     @Autowired
-    SalesDbFeignClient salesDbFeignClient;
+    SalesBsFeignClient salesDbFeignClient;
 
     public List<SalesDTO> selectAllProducts(){
-        List<SalesDTO> listaProductos = salesDbFeignClient.selectAllProducts();
+        List<SalesDTO> listaProductos = (List<SalesDTO>) salesDbFeignClient.selectAllProducts();
         return listaProductos;
     }
 }
